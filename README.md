@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SAAS BTI — Plataforma de Gestão de Serviços de TI
 
-## Getting Started
+Uma plataforma SaaS desenvolvida para facilitar a gestão de clientes, projetos e atendimentos de profissionais e empresas de tecnologia.
 
-First, run the development server:
+O **SAAS BTI** tem como objetivo centralizar a comunicação entre prestadores de serviços de TI e seus clientes, oferecendo um ambiente organizado, intuitivo e seguro para acompanhar serviços, solicitações e atividades.
+
+---
+
+## 🎯 Objetivo do projeto
+
+Desenvolver uma solução que permita a profissionais de tecnologia e pequenas empresas administrar seus clientes e serviços em um único ambiente, melhorando a organização, a produtividade e a experiência do cliente.
+
+## 🚀 Funcionalidades
+
+### Implementadas
+
+- [x] Sistema de autenticação de usuários.
+- [x] Integração com Supabase Auth.
+- [x] Painel administrativo protegido.
+- [x] Controle de acesso administrativo.
+- [x] Estrutura inicial do sistema de atendimento.
+- [x] Organização de chamados por status:
+  - Aberto.
+  - Em andamento.
+  - Resolvido.
+
+### Em desenvolvimento
+
+- [x] Gestão completa de projetos.
+- [x] Acompanhamento das etapas dos projetos.
+- [x] Cadastro e gerenciamento de clientes.
+- [x] Chat entre clientes e administradores.
+- [x] Envio de imagens e arquivos no atendimento.
+- [x] Central de documentação.
+- [x] Gestão de pagamentos.
+
+### Planejadas
+
+- [x] Pagamentos únicos e recorrentes.
+- [x] Histórico de serviços dos clientes.
+- [x] Notificações de atualizações.
+- [x] Melhorias de segurança e escalabilidade.
+
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia    | Utilização                   |
+| ------------- | ---------------------------- |
+| Next.js       | Desenvolvimento da aplicação |
+| Supabase      | Backend e autenticação       |
+| Supabase Auth | Gerenciamento de usuários    |
+| Git           | Controle de versão           |
+| GitHub        | Versionamento e documentação |
+
+## 📂 Estrutura do projeto
+
+O projeto utiliza a arquitetura do Next.js com App Router, organizando as páginas e funcionalidades em módulos.
+
+Principais áreas da aplicação:
+
+- Autenticação e login.
+- Painel administrativo.
+- Gestão de projetos.
+- Atendimento e chamados.
+- Documentação.
+- Pagamentos.
+
+## ⚙️ Como executar o projeto
+
+**1. Clone o repositório**
+
+```bash
+git clone URL_DO_SEU_REPOSITORIO
+```
+
+**2. Entre na pasta**
+
+```bash
+cd saas-bti
+```
+
+**3. Instale as dependências**
+
+```bash
+npm install
+```
+
+**4. Configure as variáveis de ambiente**
+
+Crie um arquivo `.env.local` na raiz do projeto e configure as credenciais do Supabase conforme os nomes utilizados na aplicação.
+
+Exemplo:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=sua_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave
+```
+
+Nunca compartilhe chaves privadas ou credenciais no GitHub.
+
+**5. Execute o projeto**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Segurança
 
-## Learn More
+O projeto utiliza autenticação pelo Supabase e proteção de áreas administrativas.
 
-To learn more about Next.js, take a look at the following resources:
+As credenciais e configurações sensíveis devem permanecer em variáveis de ambiente, fora do controle de versão.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Próximos passos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O desenvolvimento do SAAS BTI busca evoluir para uma plataforma completa de gestão de serviços de tecnologia, com foco em:
 
-## Deploy on Vercel
+- Experiência do usuário.
+- Organização empresarial.
+- Comunicação entre clientes e prestadores.
+- Automação de processos.
+- Gestão financeira.
+- Escalabilidade da aplicação.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Desenvolvimento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto desenvolvido como iniciativa própria, com foco em desenvolvimento Full Stack, soluções SaaS e aplicação prática de tecnologias modernas.
+
+**SAAS BTI — Tecnologia, organização e soluções em um só lugar.**
